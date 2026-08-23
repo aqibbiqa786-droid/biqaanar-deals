@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RANA AQIB BIQA ANAR | Property Advisor</title>
+  <style>
+    /* Reset & Base Styles */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    body { background-color: #f8f9fa; color: #333; line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+
+    /* Theme Variables */
+    :root {
+      --primary: #0b4628;
+      --gold: #c5a059;
+      --light-bg: #f8f9fa;
+    }
+
+    /* Top Navigation */
+    header { background: #fff; border-bottom: 1px solid #eaeaea; position: sticky; top: 0; z-index: 1000; }
+    .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; }
+    .logo { display: flex; align-items: center; gap: 10px; }
+    .logo-box { background: #fff; border: 2px solid var(--gold); color: var(--gold); font-weight: bold; padding: 5px 10px; border-radius: 4px; font-size: 20px; }
+    .logo-text h1 { font-size: 16px; color: var(--primary); font-weight: 800; }
+    .logo-text p { font-size: 11px; color: var(--gold); font-weight: bold; letter-spacing: 1px; }
+    nav ul { display: flex; list-style: none; gap: 20px; }
+    nav ul li a { font-weight: 600; color: #444; font-size: 14px; }
+    nav ul li a:hover { color: var(--primary); }
+    .nav-phone { background: var(--primary); color: #fff; padding: 8px 15px; border-radius: 4px; font-weight: bold; font-size: 14px; }
+
+    /* Hero Section */
+    .hero { background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3') center/cover; color: #fff; padding: 100px 20px; text-align: left; }
+    .hero-container { max-width: 1200px; margin: 0 auto; }
+    .hero h1 { font-size: 48px; color: #fff; font-weight: 800; }
+    .hero h1 span { color: var(--gold); }
+    .hero h2 { font-size: 20px; color: var(--gold); margin-bottom: 15px; letter-spacing: 2px; }
+    .hero p { font-size: 18px; margin-bottom: 25px; max-width: 600px; }
+    .hero-btns { display: flex; gap: 15px; }
+    .btn { padding: 12px 25px; border-radius: 5px; font-weight: bold; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; }
+    .btn-gold { background: var(--gold); color: #000; }
+    .btn-outline { border: 2px solid #fff; color: #fff; }
+
+    /* Section Styling */
+    section { padding: 60px 20px; }
+    .section-title { text-align: center; margin-bottom: 40px; }
+    .section-title span { color: var(--gold); font-weight: bold; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; }
+    .section-title h2 { color: var(--primary); font-size: 28px; font-weight: 700; margin-top: 5px; }
+
+    /* Grid Layouts */
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; }
+    .card { background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border: 1px solid #eee; }
+    .card h3 { color: var(--primary); margin-bottom: 10px; }
+    .card-badge { background: var(--primary); color: #fff; font-size: 11px; padding: 3px 8px; border-radius: 3px; display: inline-block; margin-bottom: 10px; font-weight: bold; }
+    .card-badge.rent { background: #007bff; }
+
+    /* Footer */
+    footer { background: #111; color: #fff; padding: 40px 20px 20px; }
+    .footer-container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; border-bottom: 1px solid #333; padding-bottom: 30px; }
+    .footer-bottom { text-align: center; padding-top: 20px; font-size: 13px; color: #888; }
+
+    @media (max-width: 768px) {
+      nav ul { display: none; }
+      .hero h1 { font-size: 32px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="nav-container">
+      <div class="logo">
+        <div class="logo-box">RA</div>
+        <div class="logo-text">
+          <h1>RANA AQIB BIQA ANAR</h1>
+          <p>PROPERTY ADVISOR</p>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#properties">Properties</a></li>
+          <li><a href="#rate-search-section">Market Rates</a></li>
+          <li><a href="#add-property-section">Direct Ad</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="tel:03236408173" class="nav-phone">☎ 0323 6408173</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <div class="hero" id="home">
+    <div class="hero-container">
+      <h1>RANA AQIB <span>BIQA</span> ANAR</h1>
+      <h2>PROPERTY ADVISOR</h2>
+      <p>Property buying, selling & investment services in Chichawatni and surrounding areas.</p>
+      <div class="hero-btns">
+        <a href="tel:03236408173" class="btn btn-gold">☎ Call Now</a>
+        <a href="https://wa.me/923236408173" class="btn btn-outline">☘ WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="section-title">
+      <span>Our Services</span>
+      <h2>PROPERTY SOLUTIONS</h2>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <h3>Property Buying & Selling</h3>
+        <p>Guidance for buying and selling properties at competitive prices.</p>
+      </div>
+      <div class="card">
+        <h3>Commercial Properties</h3>
+        <p>Shops, plazas, offices and commercial buildings.</p>
+      </div>
+      <div class="card">
+        <h3>Residential Properties</h3>
+        <p>Houses and residential properties for sale or purchase.</p>
+      </div>
+      <div class="card">
+        <h3>Plots & Agricultural Land</h3>
+        <p>Residential, commercial plots and agricultural land.</p>
+      </div>
+      <div class="card">
+        <h3>Property Consultancy</h3>
+        <p>Practical guidance for property investment decisions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROPERTIES -->
+  <section id="properties" style="background: #fff;">
+    <div class="section-title">
+      <span>Featured Properties</span>
+      <h2>AVAILABLE PROPERTIES</h2>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <span class="card-badge">FOR SALE</span>
+        <h3>5 Marla Residential Plot</h3>
+        <p>📍 Chichawatni</p>
+        <strong>Contact for Price</strong>
+      </div>
+      <div class="card">
+        <span class="card-badge">FOR SALE</span>
+        <h3>10 Marla House</h3>
+        <p>📍 Chichawatni</p>
+        <strong>Contact for Price</strong>
+      </div>
+      <div class="card">
+        <span class="card-badge rent">FOR RENT</span>
+        <h3>Commercial Plaza</h3>
+        <p>📍 Chichawatni</p>
+        <strong>Contact for Rent</strong>
+      </div>
+      <div class="card">
+        <span class="card-badge">FOR SALE</span>
+        <h3>Agricultural Land</h3>
+        <p>📍 Chichawatni / Sahiwal</p>
+        <strong>Contact for Price</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- RATE FINDER & AUTO SEARCH SECTION -->
+  <section id="rate-search-section" style="padding: 60px 20px; background-color: #ffffff;">
+    <div style="max-width: 1100px; margin: 0 auto;">
+      
+      <div class="section-title">
+        <span>Market Rates</span>
+        <h2>CHICHAWATNI PROPERTY RATE FINDER</h2>
+        <p style="color: #666; font-size: 14px; margin-top: 5px;">چیچہ وطنی کے مختلف علاقوں کے آن لائن مارکیٹ ریٹس تلاش کریں</p>
+      </div>
+
+      <!-- Search Input Bar -->
+      <div style="max-width: 600px; margin: 0 auto 30px auto; position: relative;">
+        <input type="text" id="rateSearchInput" onkeyup="searchRates()" placeholder="Search location or size (e.g. Main Bazar, 5 Marla, House)..." style="width: 100%; padding: 14px 20px; border: 2px solid #0b4628; border-radius: 30px; font-size: 15px; outline: none;">
+      </div>
+
+      <!-- Rate Table -->
+      <div style="overflow-x: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+        <table id="rateTable" style="width: 100%; border-collapse: collapse; text-align: left; font-size: 14px;">
+          <thead>
+            <tr style="background-color: #0b4628; color: white;">
+              <th style="padding: 12px 15px;">Area / Location</th>
+              <th style="padding: 12px 15px;">Property Type</th>
+              <th style="padding: 12px 15px;">Size</th>
+              <th style="padding: 12px 15px;">Avg Market Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid #eee;">
+              <td style="padding: 12px 15px; font-weight: bold;">Main Bazar Chichawatni</td>
+              <td style="padding: 12px 15px;">Commercial Shop</td>
+              <td style="padding: 12px 15px;">1 Marla</td>
+              <td style="padding: 12px 15px; color: #0b4628; font-weight: bold;">30 Lac - 50 Lac</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #eee;">
+              <td style="padding: 12px 15px; font-weight: bold;">Housing Scheme / Model Town</td>
+              <td style="padding: 12px 15px;">Residential Plot</td>
+              <td style="padding: 12px 15px;">5 Marla</td>
+              <td style="padding: 12px 15px; color: #0b4628; font-weight: bold;">18 Lac - 28 Lac</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #eee;">
+              <td style="padding: 12px 15px; font-weight: bold;">Housing Scheme / Model Town</td>
+              <td style="padding: 12px 15px;">Residential Plot</td>
+              <td style="padding: 12px 15px;">10 Marla</td>
+              <td style="padding: 12px 15px; color: #0b4628; font-weight: bold;">35 Lac - 55 Lac</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #eee;">
+              <td style="padding: 12px 15px; font-weight: bold;">GT Road Commercial Area</td>
+              <td style="padding: 12px 15px;">Commercial Land</td>
+              <td style="padding: 12px 15px;">1 Marla</td>
+              <td style="padding: 12px 15px; color: #0b4628; font-weight: bold;">15 Lac - 25 Lac</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #eee;">
+              <td style="padding: 12px 15px; font-weight: bold;">Chichawatni Bypass Road</td>
+              <td style="padding: 12px 15px;">Agricultural Land</td>
+              <td style="padding: 12px 15px;">1 Acre (Acre)</td>
+              <td style="padding: 12px 15px; color: #0b4628; font-weight: bold;">40 Lac - 70 Lac</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #eee;">
+              <td style="padding: 12px 15px; font-weight: bold;">Bloch Colony / Civil Lines</td>
+              <td style="padding: 12px 15px;">House (Double Storey)</td>
+              <td style="padding: 12px 15px;">5 Marla</td>
+              <td style="padding: 12px 15px; color: #0b4628; font-weight: bold;">65 Lac - 95 Lac</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DIRECT PROPERTY SUBMISSION & LIVE TABLE -->
+  <section id="add-property-section" style="padding: 60px 20px; background-color: #f4f7f5;">
+    <div style="max-width: 1100px; margin: 0 auto;">
+      
+      <div class="section-title">
+        <span>Direct Listing</span>
+        <h2>ADD YOUR PROPERTY AD</h2>
+      </div>
+
+      <!-- Form -->
+      <form id="directAdForm" style="background: #ffffff; padding: 25px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin-bottom: 40px; border: 1px solid #e2e8f0;">
+        
+        <div style="display: flex; flex-direction: column;">
+          <label style="font-weight: bold; color: #0b4628; margin-bottom: 5px; font-size: 14px;">Property Title</label>
+          <input type="text" id="adTitle" placeholder="e.g. 5 Marla House" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 14px;">
+        </div>
+
+        <div style="display: flex; flex-direction: column;">
+          <label style="font-weight: bold; color: #0b4628; margin-bottom: 5px; font-size: 14px;">Type</label>
+          <select id="adType" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 14px; background: white;">
+            <option value="FOR SALE">FOR SALE</option>
+            <option value="FOR RENT">FOR RENT</option>
+          </select>
+        </div>
+
+        <div style="display: flex; flex-direction: column;">
+          <label style="font-weight: bold; color: #0b4628; margin-bottom: 5px; font-size: 14px;">Location</label>
+          <input type="text" id="adLocation" placeholder="e.g. Chichawatni" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 14px;">
+        </div>
+
+        <div style="display: flex; flex-direction: column;">
+          <label style="font-weight: bold; color: #0b4628; margin-bottom: 5px; font-size: 14px;">Price / Rent</label>
+          <input type="text" id="adPrice" placeholder="e.g. 45 Lac / 25,000" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 14px;">
+        </div>
+
+        <div style="display: flex; flex-direction: column; grid-column: 1 / -1;">
+          <label style="font-weight: bold; color: #0b4628; margin-bottom: 5px; font-size: 14px;">Contact Number</label>
+          <input type="tel" id="adContact" placeholder="e.g. 0323 6408173" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 14px;">
+        </div>
+
+        <button type="submit" style="grid-column: 1 / -1; background-color: #0b4628; color: white; padding: 12px; border: none; border-radius: 5px; font-weight: bold; font-size: 16px; cursor: pointer;">Submit Ad Directly</button>
+      </form>
+
+      <!-- Table Header -->
+      <div style="text-align: center; margin-bottom: 20px;">
+        <h3 style="color: #0b4628; font-size: 22px; font-weight: 700;">USER SUBMITTED ADS</h3>
+      </div>
+
+      <!-- Live Table -->
+      <div style="overflow-x: auto; background: #ffffff; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+        <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 14px;">
+          <thead>
+            <tr style="background-color: #0b4628; color: white;">
+              <th style="padding: 12px 15px;">Status</th>
+              <th style="padding: 12px 15px;">Property</th>
+              <th style="padding: 12px 15px;">Location</th>
+              <th style="padding: 12px 15px;">Price</th>
+              <th style="padding: 12px 15px;">Contact</th>
+            </tr>
+          </thead>
+          <tbody id="adsTableBody">
+            <!-- New Ads Will Appear Here -->
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT & CONTACT -->
+  <section id="about">
+    <div class="section-title">
+      <span>About Us</span>
+      <h2>Trusted Property Guidance</h2>
+    </div>
+    <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+      <p>RANA AQIB BIQA ANAR Property Advisor provides property-related services in Chichawatni and surrounding areas. Our focus is helping clients buy, sell and invest in property with clear information and practical guidance.</p>
+    </div>
+  </section>
+
+  <section id="contact" style="background: #fff;">
+    <div class="section-title">
+      <span>Get In Touch</span>
+      <h2>CONTACT US & OUR LOCATION</h2>
+    </div>
+    
+    <div class="grid-3" style="max-width: 900px; margin-bottom: 40px;">
+      <div class="card">
+        <h3>RANA AQIB BIQA ANAR</h3>
+        <p>Property Advisor</p>
+        <p>Phone: 0323 6408173</p>
+        <a href="https://wa.me/923236408173" style="color: green; font-weight: bold;">☘ WhatsApp Chat</a>
+      </div>
+      <div class="card">
+        <h3>RANA TAYYAB YAQOOB</h3>
+        <p>Partner</p>
+        <p>Phone: 0305 6217597</p>
+        <a href="https://wa.me/923056217597" style="color: green; font-weight: bold;">☘ WhatsApp Chat</a>
+      </div>
+      <div class="card">
+        <h3>LOCATION ADDRESS</h3>
+        <p>📍 Chak No 40/12-L, Chichawatni, 57000, Pakistan</p>
+        <a href="https://maps.google.com/?q=30.51636620109944,72.69006877020568" target="_blank" style="color: #0b4628; font-weight: bold; display: inline-block; margin-top: 10px;">📍 Open Pin Location in Google Maps</a>
+      </div>
+    </div>
+
+    <!-- EXACT PIN GOOGLE LOCATION MAP EMBED -->
+    <div style="max-width: 1000px; margin: 0 auto; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border: 1px solid #ddd;">
+      <iframe 
+        src="https://maps.google.com/maps?q=30.51636620109944,72.69006877020568&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+        width="100%" 
+        height="380" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div>
+        <h3 style="color: var(--gold);">RANA AQIB BIQA ANAR</h3>
+        <p>PROPERTY ADVISOR</p>
+        <p style="font-size: 13px; color: #aaa; margin-top: 10px;">Property buying, selling and investment services.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p style="font-size: 13px; color: #aaa; margin-top: 10px;">☎ 0323 6408173</p>
+        <p style="font-size: 13px; color: #aaa;">📍 Chak No 40/12-L, Chichawatni, Pakistan</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 RANA AQIB BIQA ANAR Property Advisor. All Rights Reserved.
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPTS -->
+  <script>
+    // Auto Search Functionality for Market Rates
+    function searchRates() {
+      let input = document.getElementById("rateSearchInput").value.toLowerCase();
+      let rows = document.querySelectorAll("#rateTable tbody tr");
+
+      rows.forEach(row => {
+        let text = row.innerText.toLowerCase();
+        if (text.includes(input)) {
+          row.style.display = "";
+        } else {
+          row.style.display = "none";
+        }
+      });
+    }
+
+    // Direct User Ad Submission Functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.getElementById('directAdForm');
+      const tableBody = document.getElementById('adsTableBody');
+
+      loadAds();
+
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const adData = {
+          title: document.getElementById('adTitle').value,
+          type: document.getElementById('adType').value,
+          location: document.getElementById('adLocation').value,
+          price: document.getElementById('adPrice').value,
+          contact: document.getElementById('adContact').value
+        };
+
+        saveAd(adData);
+        renderRow(adData);
+        form.reset();
+      });
+
+      function renderRow(ad) {
+        const tr = document.createElement('tr');
+        tr.style.borderBottom = '1px solid #eee';
+
+        const statusBg = ad.type === 'FOR SALE' ? '#28a745' : '#007bff';
+
+        tr.innerHTML = `
+          <td style="padding: 12px 15px;"><span style="background:${statusBg}; color:white; padding:3px 8px; border-radius:4px; font-size:11px; font-weight:bold;">${ad.type}</span></td>
+          <td style="padding: 12px 15px; font-weight:bold; color:#333;">${ad.title}</td>
+          <td style="padding: 12px 15px; color:#666;">📍 ${ad.location}</td>
+          <td style="padding: 12px 15px; color:#333;">${ad.price}</td>
+          <td style="padding: 12px 15px;"><a href="tel:${ad.contact}" style="color:#0b4628; font-weight:bold; text-decoration:none;">📞 ${ad.contact}</a></td>
+        `;
+
+        tableBody.appendChild(tr);
+      }
+
+      function saveAd(ad) {
+        let ads = JSON.parse(localStorage.getItem('rana_property_ads') || '[]');
+        ads.push(ad);
+        localStorage.setItem('rana_property_ads', JSON.stringify(ads));
+      }
+
+      function loadAds() {
+        let ads = JSON.parse(localStorage.getItem('rana_property_ads') || '[]');
+        ads.forEach(renderRow);
+      }
+    });
+  </script>
+</body>
+</html>
